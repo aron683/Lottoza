@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LottoLogic ZA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00ffcc;
+    }
+
+    .search-bar {
+      margin: 20px auto;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      font-size: 1em;
+      width: 200px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .search-bar button {
+      padding: 10px 15px;
+      font-size: 1em;
+      margin-left: 10px;
+      background-color: #00ffcc;
+      color: #111;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .number-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .number-list li {
+      background: #2d2d2d;
+      color: #fff;
+      font-size: 1.2em;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .number-list li:nth-child(1) { background-color: #ff4d4d; }
+    .number-list li:nth-child(2) { background-color: #4d94ff; }
+    .number-list li:nth-child(3) { background-color: #4dff4d; }
+    .number-list li:nth-child(4) { background-color: #ffff4d; }
+    .number-list li:nth-child(5) { background-color: #ffb84d; }
+    .number-list li:nth-child(6) { background-color: #b84dff; }
+    .number-list li:nth-child(7) { background-color: #00ffff; }
+    .number-list li:nth-child(8) { background-color: #ff66cc; }
+
+    .powered-by {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>LottoLogic ZA</h1>
+  <div class="search-bar">
+    <input type="text" id="lotteryName" placeholder="Search Lottery...">
+    <button onclick="searchLottery()">Search</button>
+  </div>
+
+  <h3 id="lotteryTitle">UK49s Lunchtime Prediction</h3>
+  <ul class="number-list" id="numberList">
+    <li>5</li>
+    <li>11</li>
+    <li>17</li>
+    <li>24</li>
+    <li>30</li>
+    <li>36</li>
+    <li>44</li>
+    <li>49</li>
+  </ul>
+
+  <footer class="powered-by">Powered by Tiisetso</footer>
+
+  <script>
+    function searchLottery() {
+      const name = document.getElementById('lotteryName').value.trim();
+      if (name !== "") {
+        document.getElementById('lotteryTitle').innerText = name + " Prediction";
+      }
+    }
+  </script>
+</body>
+</html>
