@@ -1,108 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>LottoLogic ZA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaal Network & Solar – Powered by Adam</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(120deg, #003366, #005fa3);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 40px 20px;
+      background: #fff;
+    }
+    .service {
+      background: #eaf4ff;
+      border-left: 6px solid #0077cc;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .service h2 {
+      margin-top: 0;
+      color: #003366;
+    }
+    .cta {
+      text-align: center;
+      padding: 30px;
+      background: #f0f0f0;
+    }
+    .cta button {
+      background: #0077cc;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta button:hover {
+      background: #005999;
+    }
+    footer {
+      background: #003366;
+      color: white;
       text-align: center;
       padding: 20px;
     }
-
-    h1 {
-      color: #00ffcc;
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: 0.3s;
     }
-
-    .search-bar {
-      margin: 20px auto;
-    }
-
-    .search-bar input {
-      padding: 10px;
-      font-size: 1em;
-      width: 200px;
-      border-radius: 5px;
-      border: none;
-    }
-
-    .search-bar button {
-      padding: 10px 15px;
-      font-size: 1em;
-      margin-left: 10px;
-      background-color: #00ffcc;
-      color: #111;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .number-list {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      list-style: none;
-      padding: 0;
-      margin: 20px 0;
-    }
-
-    .number-list li {
-      background: #2d2d2d;
-      color: #fff;
-      font-size: 1.2em;
-      padding: 10px 15px;
-      margin: 5px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
-    .number-list li:nth-child(1) { background-color: #ff4d4d; }
-    .number-list li:nth-child(2) { background-color: #4d94ff; }
-    .number-list li:nth-child(3) { background-color: #4dff4d; }
-    .number-list li:nth-child(4) { background-color: #ffff4d; }
-    .number-list li:nth-child(5) { background-color: #ffb84d; }
-    .number-list li:nth-child(6) { background-color: #b84dff; }
-    .number-list li:nth-child(7) { background-color: #00ffff; }
-    .number-list li:nth-child(8) { background-color: #ff66cc; }
-
-    .powered-by {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
+    .whatsapp:hover {
+      background: #1ebe5d;
     }
   </style>
 </head>
 <body>
-  <h1>LottoLogic ZA</h1>
-  <div class="search-bar">
-    <input type="text" id="lotteryName" placeholder="Search Lottery...">
-    <button onclick="searchLottery()">Search</button>
+
+<header>
+  <h1>Vaal Network & Solar</h1>
+  <p>Professional Connections & Clean Power — Powered by Adam</p>
+</header>
+
+<section class="services">
+  <div class="service">
+    <h2>📡 Network Installations</h2>
+    <p>WiFi and fiber setups for homes and businesses in Vaal. Get fast and stable internet from a trusted local provider.</p>
   </div>
+  <div class="service">
+    <h2>🔋 Solar Energy Systems</h2>
+    <p>Power your life with solar! Affordable packages for homes, shops & schools. Beat loadshedding with Adam’s solar setups.</p>
+  </div>
+  <div class="service">
+    <h2>🧰 Cabinet & Server Installation</h2>
+    <p>We build and install network cabinets, patch panels, and full server setups. Clean, professional, and secure wiring.</p>
+  </div>
+  <div class="service">
+    <h2>🏡 Home & Business Packages</h2>
+    <p>Custom bundles for your needs – whether you're running a business, upgrading your house, or building from scratch.</p>
+  </div>
+</section>
 
-  <h3 id="lotteryTitle">UK49s Lunchtime Prediction</h3>
-  <ul class="number-list" id="numberList">
-    <li>5</li>
-    <li>11</li>
-    <li>17</li>
-    <li>24</li>
-    <li>30</li>
-    <li>36</li>
-    <li>44</li>
-    <li>49</li>
-  </ul>
+<section class="cta">
+  <h2>Request a Quote Today</h2>
+  <p>Chat with Adam and get your custom connection or solar setup now!</p>
+  <a href="https://wa.me/27XXXXXXXXX" target="_blank">
+    <button>📞 WhatsApp: Request a Quote</button>
+  </a>
+</section>
 
-  <footer class="powered-by">Powered by Tiisetso</footer>
+<footer>
+  <p>© 2025 Vaal Network & Solar | Built with pride by Adam.</p>
+</footer>
 
-  <script>
-    function searchLottery() {
-      const name = document.getElementById('lotteryName').value.trim();
-      if (name !== "") {
-        document.getElementById('lotteryTitle').innerText = name + " Prediction";
-      }
-    }
-  </script>
+<a class="whatsapp" href="https://wa.me/27XXXXXXXXX" target="_blank">💬 Chat with Adam</a>
+
 </body>
-</html>
+  </html>
