@@ -1,20 +1,36 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>V.N.C – Vaal Network Communication | Powered by Adam</title>
-  <meta name="description" content="Vaal Network Communication (V.N.C) is your trusted local expert in communication systems, structured cabling, and signal boosting solutions in the Vaal Triangle. Powered by Adam." />
-  <meta name="keywords" content="Vaal Network Communication, V.N.C, Adam, telecom, structured cabling, GSM booster, VOIP, signal, patch panels, Sebokeng, Vereeniging, Vaal" />
-  <meta name="author" content="Adam – VNC" />
+  <title>Vaal Network Communication (Pty) LTD</title>
+
+  <!-- 🔍 SEO Meta -->
+  <meta name="description" content="Professional Data Cabling & Server Cabinet Installations in the Vaal. Trust Vaal Network Communication (Pty) LTD for network solutions." />
+  <meta name="keywords" content="Vaal Network Communication, VNC, Falcon, data cabling, server cabinet installation, network infrastructure, South Africa, Vaal Triangle, LAN setup, IT cabling" />
+  <meta name="author" content="Vaal Network Communication (Pty) LTD" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- 🌐 Open Graph for Social Preview -->
+  <meta property="og:title" content="Vaal Network Communication (Pty) LTD" />
+  <meta property="og:description" content="Experts in Network Cabling and Server Cabinet Installations. Based in the Vaal Triangle." />
+  <meta property="og:image" content="https://i.ibb.co/ZThTh0K/VNC-original-logo.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+
+  <!-- 🦅 Favicon (falcon-logo.png) -->
+  <link rel="icon" type="image/png" href="https://i.ibb.co/ZThTh0K/VNC-original-logo.jpg" alt="falcon-logo.png"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f8f9fb;
-      color: #222;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background: #003366;
+      background-color: #003366;
       color: white;
       padding: 30px 20px;
       text-align: center;
@@ -23,164 +39,162 @@
       width: 180px;
       margin-bottom: 10px;
     }
-    header h1 {
-      font-size: 2.4em;
-      margin: 10px 0 5px;
-    }
-    header p {
-      font-size: 1.1em;
-      font-style: italic;
-    }
-    .falcon {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Falcon_closeup.jpg') no-repeat center center;
-      background-size: cover;
-      height: 220px;
-    }
-    .services, .why, .areas, .testimonials {
-      padding: 40px 20px;
-      background: #fff;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-    .service {
-      background: #eef4ff;
-      border-left: 6px solid #005fa3;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
-    }
-    .service h2 {
-      color: #003366;
-      margin-top: 0;
-    }
-    .why {
-      background: #003366;
-      color: white;
-      text-align: center;
-      border-top: 6px solid gold;
-    }
-    .why h2 {
-      font-size: 1.8em;
-    }
-    .why ul {
-      list-style: none;
-      padding: 0;
-      margin-top: 20px;
-    }
-    .why li {
-      margin: 10px 0;
-      font-size: 1.1em;
-    }
-    .areas {
-      background: #f0f8ff;
-      text-align: center;
-    }
-    .areas h2 {
-      color: #003366;
-    }
-    .areas p {
-      font-size: 1.1em;
-    }
-    .testimonials {
-      background: #f9f9f9;
-      border-top: 4px dashed #ccc;
-    }
-    .testimonial {
-      max-width: 700px;
+    section {
+      max-width: 1100px;
       margin: auto;
-      font-style: italic;
-      text-align: center;
+      padding: 30px 20px;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    .services, .cta, .footer {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      margin-top: 30px;
+      padding: 25px;
+    }
+    .service-item {
+      margin-bottom: 20px;
+    }
+    .service-item h3 {
+      color: #ff9900;
+      margin-bottom: 10px;
     }
     .cta {
       text-align: center;
-      background: #f1f1f1;
-      padding: 30px;
-    }
-    .cta button {
-      background: #0077cc;
+      background-color: #ff9900;
       color: white;
-      border: none;
-      padding: 14px 26px;
-      font-size: 1em;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: 0.3s;
     }
-    .cta button:hover {
-      background: #005fa3;
-    }
-    footer {
+    .cta a {
+      display: inline-block;
       background: #003366;
       color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
+      padding: 12px 24px;
+      border-radius: 6px;
+      margin-top: 15px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
-    .whatsapp:hover {
-      background: #1ebe5d;
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      margin-top: 40px;
+    }
+    .contact {
+      background: #003366;
+      color: white;
+      padding: 30px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+    .contact a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe5b;
+    }
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      header img {
+        width: 140px;
+      }
     }
   </style>
 </head>
-<body><header>
-  <img src="logo.png" alt="VNC Logo" />
-  <h1>V.N.C – Vaal Network Communication</h1>
-  <p>Connecting the Vaal, One Signal at a Time</p>
-</header><div class="falcon"></div><section class="services">
-  <div class="service">
-    <h2>📞 Voice & Communication Systems</h2>
-    <p>We install local phone networks, intercoms, and VOIP systems with crystal-clear voice quality and low-latency communication.</p>
-  </div>
-  <div class="service">
-    <h2>🧰 Structured Cabling</h2>
-    <p>High-quality network infrastructure including CAT5/6 cabling, patch panels, and secure cabinet installations for homes, schools, and businesses.</p>
-  </div>
-  <div class="service">
-    <h2>📡 Antenna & Signal Boosters</h2>
-    <p>Powerful GSM and LTE boosters for stronger coverage in poor signal areas, ensuring uninterrupted communication.</p>
-  </div>
-  <div class="service">
-    <h2>🛠️ Network Maintenance & Upgrades</h2>
-    <p>Ongoing diagnostics, repairs, and optimization of existing comms systems to ensure long-term network health.</p>
-  </div>
-</section><section class="why">
-  <h2>Why Choose V.N.C?</h2>
-  <ul>
-    <li>🦅 Speed, Reliability & Local Expertise</li>
-    <li>🔧 Professional Grade Installations</li>
-    <li>📶 Modern Signal Enhancement Tools</li>
-    <li>💬 Friendly Direct Support from Adam</li>
-  </ul>
-</section><section class="areas">
-  <h2>Areas We Serve</h2>
-  <p>We proudly serve Sebokeng, Sharpeville, Evaton, Vanderbijlpark, Vereeniging and the greater Vaal Triangle.</p>
-</section><section class="testimonials">
-  <div class="testimonial">
-    <p>"Adam and his team at V.N.C transformed our factory's old wiring into a modern, high-speed communication setup. Highly professional."</p>
-    <p>– Sizwe M., Vanderbijlpark</p>
-  </div>
-</section><section class="cta">
-  <h2>Book a Free Site Assessment</h2>
-  <p>Let Adam and the V.N.C crew inspect your space and offer the best comms setup tailored to your needs. Fast turnaround. Fair pricing.</p>
-  <a href="https://wa.me/+27717735838" target="_blank">
-    <button>💬 WhatsApp Adam Now</button>
-  </a>
-</section><footer>
-  <p>© 2025 Vaal Network Communication (V.N.C). Built with pride by Adam. Registered Local Service Provider.</p>
-</footer><a class="whatsapp" href="https://wa.me/+27717735838" target="_blank">💬 Chat with Adam</a>
+<body>
+
+  <header>
+    <img src="https://i.ibb.co/ZThTh0K/VNC-original-logo.jpg" alt="falcon-logo.png" />
+    <h1>Vaal Network Communication (Pty) LTD</h1>
+    <p>“Connecting the Vaal, One Cable at a Time”</p>
+  </header>
+
+  <section>
+    <div class="services">
+      <h2>What We Do</h2>
+
+      <div class="service-item">
+        <h3>📡 Data Cabling Installation</h3>
+        <p>
+          From homes to high-rise buildings, we lay down robust CAT5e, CAT6, and fiber optic cables. Our team ensures your infrastructure is ready for high-speed, stable, and secure internet connections.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>🗄️ Server Cabinet Installation</h3>
+        <p>
+          We design and install clean, secure server cabinet systems tailored to your needs — complete with power layout, cable management, airflow, and labeling. Your tech deserves a solid home.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>🔧 Network Maintenance & Upgrades</h3>
+        <p>
+          Need your network audited or upgraded? We provide affordable maintenance, rewiring, and expansion services to ensure your system is future-ready.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>🏢 Commercial & Residential Support</h3>
+        <p>
+          Whether it's an office building or a private home, we bring professional networking services straight to your doorstep — across the Vaal Triangle and beyond.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>📞 Contact Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:vaalnetworkcommunication@gmail.com">vaalnetworkcommunication@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="https://wa.me/27717735838" target="_blank">+27 71 773 5838 (WhatsApp)</a></p>
+      <p><strong>Location:</strong> Vaal Triangle, Gauteng, South Africa</p>
+      <p><strong>Working Hours:</strong> Mon–Sat: 8am – 5pm</p>
+      <a class="whatsapp-btn" href="https://wa.me/27717735838" target="_blank">💬 Message Us on WhatsApp</a>
+    </div>
+
+    <div class="cta">
+      <h2>Get a Free Quote Today!</h2>
+      <p>Reach out and let us power your next project with clean, professional cabling & communication systems.</p>
+      <a href="mailto:vaalnetworkcommunication@gmail.com">📧 Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- 📍 Embedded Map of Vaal Triangle -->
+  <section>
+    <div style="margin-top: 30px; text-align: center;">
+      <h2>📍 Our Location</h2>
+      <p>We proudly serve clients across the Vaal Triangle and nearby areas.</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113525.79904332782!2d27.75377829093351!3d-26.68863420714219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95bfa92682d5df%3A0xb660e479ef11c1b1!2sVaal%20Triangle!5e0!3m2!1sen!2sza!4v1719920341882!5m2!1sen!2sza" 
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Vaal Network Communication (Pty) LTD. Built with ❤️ in the Vaal.
+  </footer>
 
 </body>
-        </html>
+  </html>
